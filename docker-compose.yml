@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  lighthouse-medalla-beacon-chain.dnp.dappnode.eth:
+    build:
+      context: ./build
+      args:
+        - UPSTREAM_VERSION
+    image: 'lighthouse-medalla-beacon-chain.dnp.dappnode.eth:1.0.0'
+    restart: always
+    environment:
+      - 'HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545'
+      - EXTRA_OPTS
+    ports:
+      - '9000:9000'
+      - '9000:9000/udp'

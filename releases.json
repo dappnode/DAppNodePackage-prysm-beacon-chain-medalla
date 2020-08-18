@@ -6,9 +6,24 @@
     }
   },
   "1.0.0": {
-    "hash": "/ipfs/QmSJuZ5hQwH37KNJ9XeqynTLdATYyHxvj1ksv13Kgxq8UD",
+    "hash": "/ipfs/QmdK4ww47xw6MhZspAMjrG966UYrz8jmPJ6yRbpUC8Qtzg",
     "uploadedTo": {
-      "dappnode": "Tue, 04 Aug 2020 19:42:49 GMT"
-    }
+      "remote": "Tue, 04 Aug 2020 19:50:14 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=lighthouse-medalla-beacon-chain.dnp.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmdK4ww47xw6MhZspAMjrG966UYrz8jmPJ6yRbpUC8Qtzg&d=0xF35960302a07022aBa880DFFaEC2Fdd64d5BF1c1"
+  },
+  "1.0.1": {
+    "hash": "/ipfs/QmQ23h9C23X2Rwxd58DRzRvvviDdNYiJAjbbxFUnLMM24P",
+    "uploadedTo": {
+      "dappnode": "Tue, 18 Aug 2020 07:28:59 GMT"
+    },
+    "link": "https://dappnode.github.io/sdk-publish/?r=lighthouse-medalla-beacon-chain.dnp.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmZvSMcfFGBuE4tP3Um84i66J4kFNewZFgDgkMzmSaPm6J"
+  },
+  "1.0.2": {
+    "hash": "/ipfs/QmQvKS2d8jg6tjAd3dmyZc31rS2wcrDcbkQoeGYMxhAWA8",
+    "uploadedTo": {
+      "remote": "Tue, 18 Aug 2020 07:35:56 GMT"
+    },
+    "link": "https://dappnode.github.io/sdk-publish/?r=lighthouse-medalla-beacon-chain.dnp.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmQvKS2d8jg6tjAd3dmyZc31rS2wcrDcbkQoeGYMxhAWA8"
   }
 }

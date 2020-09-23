@@ -9,8 +9,8 @@ jobs:
     name: Trigger the DAppNode Package update
     runs-on: ubuntu-latest
     env: 
-      DISPATCH_REPO: dappnode/DAppNodePackage-prysm-medalla-beacon-chain
-      UPSTREAM_REPO: prysmaticlabs/prysm
+      DISPATCH_REPO: dappnode/DAppNodePackage-lighthouse-medalla-beacon-chain
+      UPSTREAM_REPO: sigp/lighthouse
     steps:
     - uses: actions/checkout@v2
     - name: Get the tag

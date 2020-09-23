@@ -1,0 +1,31 @@
+name: Remote Dispatch Action Initiator
+
+on:
+  repository_dispatch:
+
+jobs:
+  new_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+          
+      - name: dappnodesdk publish
+        id: dappnodesdk-publish
+        run: |
+          sed -i "s/        UPSTREAM_VERSION: .*/        UPSTREAM_VERSION: ${{ steps.dispatch-event.outputs.TAG }}/g" docker-compose.yml
+          npx @dappnode/dappnodesdk publish patch --dappnode_team_preset --timeout 2h
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEVELOPER_ADDRESS: "0xf35960302a07022aba880dffaec2fdd64d5bf1c1"
+
+      - name: Commit changes
+        run: |
+            git config --global user.email "eduadiez@gmail.com"
+            git config --global user.name "Eduardo"
+            git commit -am "Github action bumped version to ${{ steps.dispatch-event.outputs.TAG }}"
+            git push

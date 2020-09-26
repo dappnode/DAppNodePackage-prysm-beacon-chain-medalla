@@ -23,13 +23,12 @@ jobs:
         fi
         echo ::set-output name=TAG::$UPSTREAM_TAG
 
-    - name: update UPSTREAM_VERSION
+    - name: update UPSTREAM_VERSION and commit changes
+      if: steps.get_tag.outputs.trigger_update == 'true'
       run: |
         sed -i "s/        UPSTREAM_VERSION: .*/        UPSTREAM_VERSION: ${{ steps.get_tag.outputs.TAG }}/g" docker-compose.yml
-
-    - name: Commit changes
-      run: |
-          git config --global user.email "eduadiez@gmail.com"
-          git config --global user.name "Eduardo"
-          git commit -am "Github action bumped version to ${{ steps.get_tag.outputs.TAG }}"
-          git push
+        git config --global user.email "eduadiez@gmail.com"
+        git config --global user.name "Eduardo"
+        git config --global user.password ${{ secrets.PAT_GITHUB }}
+        git commit -am "Github action bumped version to ${{ steps.get_tag.outputs.TAG }}"
+        git push

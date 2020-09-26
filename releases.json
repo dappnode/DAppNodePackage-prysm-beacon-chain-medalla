@@ -25,5 +25,11 @@
       "remote": "Tue, 18 Aug 2020 07:35:56 GMT"
     },
     "link": "https://dappnode.github.io/sdk-publish/?r=lighthouse-medalla-beacon-chain.dnp.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmQvKS2d8jg6tjAd3dmyZc31rS2wcrDcbkQoeGYMxhAWA8"
+  },
+  "1.0.7": {
+    "hash": "/ipfs/QmX4FCCsKjiyhnLyVG8LEMRcSvPbEfkcKsGLWqXyzH3wD2",
+    "uploadedTo": {
+      "dappnode": "Sat, 26 Sep 2020 13:10:01 GMT"
+    }
   }
 }

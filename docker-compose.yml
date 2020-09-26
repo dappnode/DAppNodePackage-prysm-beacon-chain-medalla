@@ -1,11 +1,11 @@
 version: '3.4'
 services:
-  lighthouse-medalla-beacon-chain.dnp.dappnode.eth:
+  lighthouse-spadina-beacon-chain.dnp.dappnode.eth:
     build:
       context: ./build
       args:
         UPSTREAM_VERSION: v0.2.12
-    image: 'lighthouse-medalla-beacon-chain.dnp.dappnode.eth:1.0.7'
+    image: 'lighthouse-spadina-beacon-chain.dnp.dappnode.eth:1.0.0'
     restart: always
     environment:
       - 'HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545'

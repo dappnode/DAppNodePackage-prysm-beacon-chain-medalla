@@ -18,4 +18,4 @@ RUN export ARCH=$(uname -m) && \
 # Verify binary is in correct arch
 RUN lighthouse --version
 
-ENTRYPOINT [ "sh", "-c", "exec lighthouse --datadir /data beacon_node --eth1 --http --http-address 0.0.0.0 --http-allow-origin '*' --testnet medalla --eth1-endpoint ${HTTP_WEB3PROVIDER} --max-skip-slots 700 ${EXTRA_OPTS}" ]
+ENTRYPOINT [ "sh", "-c", "exec lighthouse --datadir /data beacon_node --eth1 --http --http-address 0.0.0.0 --http-allow-origin '*' --testnet spadina --eth1-endpoint ${HTTP_WEB3PROVIDER} --max-skip-slots 700 ${EXTRA_OPTS}" ]

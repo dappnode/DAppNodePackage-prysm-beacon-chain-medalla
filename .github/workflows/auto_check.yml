@@ -27,6 +27,7 @@ jobs:
       if: steps.get_tag.outputs.trigger_update == 'true'
       run: |
         sed -i "s/        UPSTREAM_VERSION: .*/        UPSTREAM_VERSION: ${{ steps.get_tag.outputs.TAG }}/g" docker-compose.yml
+        echo "::set-env name=GIT_USER::eduadiez:${{ secrets.PAT_GITHUB }}"
         git config --global user.email "eduadiez@gmail.com"
         git config --global user.name "Eduardo"
         git config --global user.password ${{ secrets.PAT_GITHUB }}

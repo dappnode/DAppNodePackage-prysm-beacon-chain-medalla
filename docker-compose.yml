@@ -15,5 +15,6 @@ services:
     ports:
       - '9000:9000'
       - '9000:9000/udp'
+      - '5052:5052'
 volumes:
   data: {}

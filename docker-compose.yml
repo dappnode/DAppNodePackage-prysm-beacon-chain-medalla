@@ -1,19 +1,19 @@
-version: '3.4'
+version: "3.4"
 services:
   lighthouse-zinken-beacon-chain.dnp.dappnode.eth:
     build:
       context: ./build
       args:
         UPSTREAM_VERSION: v0.3.0
-    image: 'lighthouse-zinken-beacon-chain.dnp.dappnode.eth:0.1.0'
+    image: "lighthouse-zinken-beacon-chain.dnp.dappnode.eth:0.1.0"
     restart: always
     environment:
-      - 'HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545'
+      - "HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545"
       - EXTRA_OPTS
     volumes:
-      - 'data:/data'
+      - "data:/data"
     ports:
-      - '9000:9000'
-      - '9000:9000/udp'
+      - "9003:9003"
+      - "9003:9003/udp"
 volumes:
   data: {}

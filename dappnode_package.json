@@ -1,8 +1,8 @@
 {
-  "name": "lighthouse-medalla-beacon-chain.dnp.dappnode.eth",
-  "version": "1.0.11",
+  "name": "lighthouse-zinken-beacon-chain.dnp.dappnode.eth",
+  "version": "0.1.0",
   "upstreamVersion": "v0.3.0",
-  "shortDescription": "Lighthouse Medalla ETH2.0 Beacon chain",
+  "shortDescription": "Lighthouse zinken ETH2.0 Beacon chain",
   "description": "An open-source Ethereum 2.0 client, written in Rust and maintained by Sigma Prime.",
   "type": "service",
   "architectures": [
@@ -16,10 +16,10 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dappnode/DAppNodePackage-lighthouse-medalla-beacon-chain.git"
+    "url": "git+https://github.com/dappnode/DAppNodePackage-lighthouse-zinken-beacon-chain.git"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-lighthouse-medalla-beacon-chain/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-lighthouse-zinken-beacon-chain/issues"
   },
   "requirements": {
     "minimumDappnodeVersion": "0.2.20"
@@ -28,7 +28,7 @@
     "Blockchain"
   ],
   "links": {
-    "readme": "https://github.com/dappnode/DAppNodePackage-lighthouse-medalla-beacon-chain",
+    "readme": "https://github.com/dappnode/DAppNodePackage-lighthouse-zinken-beacon-chain",
     "lighthouse": "https://github.com/sigp/lighthouse"
   },
   "dependencies": {

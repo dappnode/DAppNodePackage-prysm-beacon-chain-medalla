@@ -13,7 +13,7 @@ services:
     volumes:
       - "data:/data"
     ports:
-      - "9003:9003"
-      - "9003:9003/udp"
+      - "9000"
+      - "9000/udp"
 volumes:
   data: {}

@@ -24,7 +24,7 @@ ENTRYPOINT [ "sh", "-c", "exec lighthouse \
     --http \
     --http-address 0.0.0.0 \
     --http-allow-origin '*' \
-    --port 9003 \
+    --port 9000 \
     --testnet zinken \
     --eth1-endpoint ${HTTP_WEB3PROVIDER} \
     --max-skip-slots 700 \

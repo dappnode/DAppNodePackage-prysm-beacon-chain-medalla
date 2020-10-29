@@ -1,7 +1,9 @@
 {
   "name": "lighthouse-medalla-beacon-chain.dnp.dappnode.eth",
   "version": "1.0.7",
-  "upstreamVersion": "v0.3.2",
+  "upstreamVersion": "v0.3.0",
+  "upstreamRepo": "sigp/lighthouse",
+  "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "Lighthouse Medalla ETH2.0 Beacon chain",
   "description": "An open-source Ethereum 2.0 client, written in Rust and maintained by Sigma Prime.",
   "type": "service",

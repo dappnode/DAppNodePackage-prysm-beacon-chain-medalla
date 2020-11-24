@@ -1,7 +1,7 @@
 {
   "name": "lighthouse-medalla-beacon-chain.dnp.dappnode.eth",
   "version": "1.0.7",
-  "upstreamVersion": "v0.3.2",
+  "upstreamVersion": "v1.0.0",
   "upstreamRepo": "sigp/lighthouse",
   "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "Lighthouse Medalla ETH2.0 Beacon chain",
